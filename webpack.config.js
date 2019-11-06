@@ -20,6 +20,15 @@ module.exports = {
     }, {
       test: /\.(png|jpg)$/,
       loader: 'url-loader',
+      // use: [
+      //   {
+      //     loader: 'url-loader',
+      //     options: {
+      //       // 最大多大的图片可以转为base64，超过这个大小则使用普通url
+      //       limit: 8192,
+      //     },
+      //   },
+      // ],
     }]
   },
   plugins: [
